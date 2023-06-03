@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 10;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100%;
+    background-color: #2C3E50;
+}
+
+html {
+    height: 100%;
+}
+
+.grid-container>* {
+    box-shadow: -1px 1px 5px 0px rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    background-color: #F23535;
+    color: white;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #9400E6;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: #EAF205;
+}
+.GamesLinks{
+    color: black;
+}
+
+.section {
+    grid-area: section;
+    background-color:#000000;
+    color: white;
+}
+.pics{
+    width: 30%;
+    height: 30%;
+    border-radius: 10%;
+}
+.GamesPics{
+    width: 30%;
+    height: 30%;
+    border-radius: 2%;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #9400E6;
+    color: white;
+}
+.RedesLinks{
+    padding-top: 10px;
+}
+
+a{
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+
+    /*Definiendo el alto de las filas:*/
+    /*Si queremos una columna vacia ponesmos un punto "."*/
+    grid-template:
+    "header header"     100px  /*alto*/
+    "nav    nav"        50px
+    "aside  section"    auto
+    "footer footer"     100px /
+
+    200px   auto;
+    /*ancho:*/
+    /*Definiendo el ancho de las columnas ( / 200px auto):*/
+}
